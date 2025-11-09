@@ -24,6 +24,13 @@ export default function ProjectsPage() {
       live: "https://anteater-events.onrender.com/",
     },
     {
+      title: "SyllabusWizard",
+      technologies: "React, Python, AWS Bedrock, S3, Lambda, API Gateway, Textract",
+      image: "/aiuc.png",
+      github: "",
+      live: "https://devpost.com/software/syllabuswizard",
+    },
+    {
       title: "TFT Discord Bot",
       technologies: "Python, Discord API",
       image: "/tft.webp",
