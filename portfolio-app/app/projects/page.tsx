@@ -55,7 +55,7 @@ export default function ProjectsPage() {
               src={project.image}
               alt={project.title}
               width={400}
-              height={400} // increased height for more square aspect
+              height={400} 
               className="object-cover w-full h-80 md:h-96 transition-transform group-hover:scale-105 group-hover:blur-sm"
             />
 

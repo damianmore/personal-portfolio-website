@@ -45,7 +45,6 @@ export default function ContactPage() {
       {/* Title */}
       <h1 className="text-4xl font-bold text-white mb-6">Contact Me</h1>
 
-      {/* Intro text */}
       <p className="text-gray-200 mb-8 text-center max-w-xl">
         Hi! I’m always excited to connect. Whether you have a question, a project idea, or just want to say hi, feel free to send a message below.
       </p>

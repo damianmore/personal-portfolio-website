@@ -12,6 +12,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import "./globals.scss";
+import Image from "next/image";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -26,7 +27,7 @@ const geistMono = Geist_Mono({
 export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
-  // Helper to render a sidebar icon with tooltip
+
   const SidebarIcon = ({
     icon,
     label,
@@ -56,16 +57,26 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased flex min-h-screen`}
-        style={{ backgroundColor: "#1F2223" }} // background behind sidebar
+        style={{ backgroundColor: "#1F2223" }} 
       >
         {/* Sidebar */}
         <aside
           className="fixed left-0 top-0 h-screen p-2 flex flex-col justify-between items-center"
           style={{ backgroundColor: "#2A2E2F", width: "5rem" }} // w-20 = 5rem
         >
-          {/* Top (optional title/logo) */}
           <div className="mb-2">
-            <h1 className="text-xs font-bold text-center text-gray-300">My App</h1>
+            <Link href="/" className="flex flex-col items-center">
+              <Image
+                src="/petr.png" 
+                alt="Logo"
+                width={40}
+                height={40}
+                className="rounded-full"
+              />
+              <h1 className="text-xs font-bold text-center text-gray-300 mt-1">
+                Damian
+              </h1>
+            </Link>
           </div>
 
           {/* Middle icons */}

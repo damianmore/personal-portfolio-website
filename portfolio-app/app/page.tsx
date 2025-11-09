@@ -9,7 +9,6 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 export default function HomePage() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-[#181A1B] text-white px-6 md:px-20">
-      {/* Hero section */}
       <div className="flex flex-col md:flex-row items-center gap-10 max-w-6xl w-full mt-16">
         {/* Left: Text */}
         <div className="flex-1 flex flex-col gap-6">
@@ -37,7 +36,6 @@ export default function HomePage() {
           </div>
         </div>
 
-        {/* Right: Profile image */}
         <div className="flex-1 flex justify-center">
           <Image
             src="/pfp.webp"
@@ -49,7 +47,6 @@ export default function HomePage() {
         </div>
       </div>
 
-      {/* Optional tagline / highlights */}
       <div className="mt-16 flex flex-col items-center gap-6 text-gray-300 max-w-4xl text-center">
         <p>💻 Backend and Infrastructure Development</p>
         <p>☁️ Cloud Technology Enthusiast</p>

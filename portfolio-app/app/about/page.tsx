@@ -1,7 +1,6 @@
 import Image from "next/image";
 
 export default function AboutPage() {
-  // Manually defined skills with placeholder URLs
   const skills = [
     // Languages
     { name: "Python", url: "/images/python.png" },
@@ -31,7 +30,6 @@ export default function AboutPage() {
 
   return (
     <div className="flex flex-col p-6 gap-8">
-      {/* Main content split evenly */}
       <div className="flex flex-col md:flex-row gap-8">
         {/* Left: Title + paragraphs */}
         <div className="md:w-1/2 flex flex-col items-start gap-4 text-lg text-gray-200">
