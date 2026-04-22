@@ -16,6 +16,20 @@ interface Project {
 
 export default function ProjectsPage() {
   const projects: Project[] = [
+      {
+      title: "Sublet.ai",
+      technologies: "AWS, API Gateway, S3, Bedrock, Lambda, Python",
+      image: "/keys.webp",
+      github: "https://devpost.com/software/zotlease-06p175",
+      live: "",
+    },
+      {
+      title: "WalkBack",
+      technologies: "Python, Supabase, Render, FastAPI, Docker, Fetch.AI",
+      image: "/tft.webp",
+      github: "https://devpost.com/software/walkback-zctpik",
+      live: "/Screenshot 2026-04-22 152916.png",
+    },
     {
       title: "AnteaterEvents",
       technologies: "Django, React, Supabase, Render, Docker, Gemini API",

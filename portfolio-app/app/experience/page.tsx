@@ -19,12 +19,24 @@ const CompanyLogo = ({ src, alt }: { src: string; alt: string }) => (
 export default function WorkExperiencePage() {
   const experiences = [
     {
+      title: "Software Project Intern",
+      company: "GoFlyy",
+      dates: "February 2026 – April 2026",
+      location: "Remote",
+      description: [
+        "Developed endpoints with the Gemini API to analyze clothing condition and route clothing return decisions.",
+        "Built pipeline infrastructure using AWS S3 and AWS DynamoDB to store images and review results."
+      ],
+      logo: "goflyylogo.png", 
+    },
+    {
       title: "Infrastructure Intern",
       company: "Cyber@UCI",
       dates: "October 2025 – Present",
       location: "Irvine, CA",
       description: [
-        "Learning and beginning to support virtual machine infrastructure automation for Cybersecurity competition training using Ansible and Terraform.",
+        "Implemented JWT-based authentication using Authentik to enforce role-based access control, ensuring different club teams can only edit virtual machines for their respective teams.",
+        "Built Golang endpoints with the Proxmox VE API to automate creation and destruction of multiple VMs from shared templates, cutting club workshop setup time from ∼1 hour to under 15 minutes."
       ],
       logo: "cyber_uci_logo_color.svg", 
     },
@@ -34,11 +46,10 @@ export default function WorkExperiencePage() {
       dates: "July 2025 – September 2025",
       location: "La Canada Flintridge, CA",
       description: [
-        "Developed a MATLAB tool for NASA’s DSN Loading Studies team, integrating the spacecraft schedule API to predict spacecraft-antenna usage from historical data and replace a previously manual process.",
-        "Created algorithms in MATLAB to calculate spacecraft-antenna usage from 100K+ lines of scheduling data in seconds.",
-        "Developed a Python spacecraft documentation automation tool for DSN Mission Interface Managers that queries data from internal SQL databases and updates Atlassian Confluence pages via RESTful APIs.",
-        "Reduced Confluence page creation time from ∼1 hour to under 5 minutes and reduced manual entry by 70%.",
-        "Automated unit tests and deployed Docker images with a GitHub Actions CI/CD pipeline to AWS Lambda via AWS ECR, enabling weekly automated updates of spacecraft documentation.",
+        " Developed a MATLAB tool that processes 100k+ lines of historical schedule data in seconds to predict how many hours each deep-space spacecraft or antenna will be actively communicating.",
+        "Developed AWS Lambda functions that pull data from internal SQL databases and automate Confluence documentation page updates every week.",
+        "Reduced Confluence page creation and update time from ∼30 minutes to under 5.",
+        "Automated unit tests and deployed Docker images to AWS with a GitHub Actions CI/CD pipeline.",
       ],
       logo: "/jpl.png",
     },
