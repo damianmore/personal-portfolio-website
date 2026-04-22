@@ -26,7 +26,7 @@ export default function ProjectsPage() {
       {
       title: "WalkBack",
       technologies: "Python, Supabase, Render, FastAPI, Docker, Fetch.AI",
-      image: "/tft.webp",
+      image: "/walk.png",
       github: "https://devpost.com/software/walkback-zctpik",
       live: "/Screenshot 2026-04-22 152916.png",
     },
