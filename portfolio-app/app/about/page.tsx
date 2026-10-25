@@ -4,15 +4,13 @@ export default function AboutPage() {
   const skills = [
     // Languages
     { name: "Python", url: "/images/python.png" },
-    { name: "Java", url: "/images/java.png" },
     { name: "TypeScript", url: "/images/typescript.png" },
-    { name: "C++", url: "/images/c-.png" },
     { name: "MATLAB", url: "/images/Matlab_Logo.png" },
     { name: "Lua", url: "/images/Lua-Logo.svg.png" },
     { name: "SQL", url: "/images/Postgresql_elephant.svg.png" },
 
     // Frameworks & Technologies
-    { name: "Spring Boot", url: "/images/Spring_Boot.svg.png" },
+    { name: "Node.js", url: "/images/node.png" },
     { name: "Django", url: "/images/django-icon.svg" },
     { name: "AWS", url: "/images/aws-color.png" },
     { name: "Docker", url: "/images/docker.png" },
@@ -36,15 +34,15 @@ export default function AboutPage() {
           <h1 className="text-4xl font-bold mb-4">About Me</h1>
 
           <p className="mb-4">
-            Hi! I'm Damian Moreno, a current 2nd year at University of California Irvine studying Computer Science. I am really interested in working with cloud infrastructure and learning how to tackle the problems of reliability and scalability for software.
+            Hi! I'm Damian Moreno, a current 3rd-year at the University of California, Irvine, studying Computer Science. I am really interested in working with cloud infrastructure and learning how to tackle the problems of reliability and scalability for software.
           </p>
 
           <p className="mb-4">
-            I have experience developing backend APIs with Python Django and FastAPI. I have experience developing frontend components with Typescript and React. I also am currently learning how to develop in Java Spring Boot. In the future I also want to learn Golang!
+            I have experience developing backend APIs with Python, Golang, and TypeScript. I have experience developing frontend components with TypeScript as well. I am interested in learning more about software architecture!
           </p>
 
           <p>
-            My favorite thing about software is being able to create something on my own laptop and see it able to be used by people across the world. I think software is unique in that my solutions can impact someone no matter where they are. It feels like magic but it's real, and I want to learn so much more about how it all works.
+            My favorite thing about software is being able to create something on my own laptop and see it able to be used by people across the world. I think software is unique in that my solutions can impact someone no matter where they are. It feels like magic, but it's real, and I want to learn so much more about how it all works.
           </p>
         </div>
 
