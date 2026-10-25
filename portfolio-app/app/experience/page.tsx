@@ -82,7 +82,7 @@ export default function WorkExperiencePage() {
       location: "La Canada Flintridge, CA",
       description: [
         " Developed a MATLAB tool that processes 100k+ lines of historical schedule data in seconds to predict how many hours each deep-space spacecraft or antenna will be actively communicating.",
-        "Developed AWS Lambda functions that pull data from internal SQL databases and automate Confluence documentation page updates every week, saving 6+ hours weekly.",
+        "Developed AWS Lambda functions that pull data from internal SQL databases and automate Confluence documentation page updates every week.",
         "Reduced Confluence page creation and update time from ∼30 minutes to under 5.",
         "Automated unit tests and deployed Docker images to AWS Lmabda with a GitHub Actions CI/CD pipeline.",
       ],
