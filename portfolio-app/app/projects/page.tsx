@@ -17,6 +17,13 @@ interface Project {
 export default function ProjectsPage() {
   const projects: Project[] = [
       {
+      title: "GrassTouch - Website/App Blocker",
+      technologies: "TypeScript, C#",
+      image: "/blocker.png",
+      github: "https://github.com/damianmore/GrassTouch",
+      live: "",
+    },
+      {
       title: "Sublet.ai",
       technologies: "AWS, API Gateway, S3, Bedrock, Lambda, Python",
       image: "/keys.webp",
