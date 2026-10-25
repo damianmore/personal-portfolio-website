@@ -19,9 +19,44 @@ const CompanyLogo = ({ src, alt }: { src: string; alt: string }) => (
 export default function WorkExperiencePage() {
   const experiences = [
     {
+      title: "Full-stack Developer",
+      company: "Zotbins@UCI (Student Club)",
+      dates: "September 2026 – Present",
+      location: "Remote",
+      description: [
+        "Migrated a legacy database service to Node.js, making maintenance easier with no changes to dependent services.",
+        "Built a CI pipeline to run HTTP and Postgres integration tests to verify service behavior stayed the same as before."
+      ],
+      logo: "zotbins.svg", 
+    },
+    {
+      title: "Software Engineering Intern",
+      company: "OpenSesame",
+      dates: "June 2026 – August 2026",
+      location: "Remote",
+      description: [
+        "Built a feature for 26 clients in Node.js to customize course templates, removing a blocker to using our platform.",
+        "Restored course video playback for 300+ affected users by fixing iOS version detection in TypeScript that incorrectly blocked supported devices or displayed misleading error messages.",
+        "Resolved AWS translation job failures on large courses by replacing AWS job checks that marked in-progress jobs as failed if they took too long with asynchronous polling that correctly waited for completion."
+      ],
+      logo: "opensesame.png", 
+    },
+    {
+      title: "Software Engineering Intern",
+      company: "LA-Tech.org (Nonprofit)",
+      dates: "February 2026 – May 2026",
+      location: "Remote",
+      description: [
+        "Developed an edge-case detector with a team of 6, flagging crashes and sudden swerves in 39,000+ public Waymo data frames using acceleration/jerk thresholds over rolling frame windows to help improve future model training.",
+        "Engineered a Python data pipeline to transform 1TB+ of raw TFRecord file data into organized Parquet files, reducing file reloading time from ∼75 minutes to under 1 minute for each data re-analysis.",
+        "Cut initial TFRecord file read time by 82% by loading file chunks in parallel and reading only relevant metrics."
+      ],
+      logo: "la-tech.png", 
+    },
+    {
       title: "Software Project Intern",
       company: "GoFlyy",
-      dates: "February 2026 – April 2026",
+      dates: "January 2026 – February 2026",
       location: "Remote",
       description: [
         "Developed endpoints with the Gemini API to analyze clothing condition and route clothing return decisions.",
@@ -32,11 +67,11 @@ export default function WorkExperiencePage() {
     {
       title: "Infrastructure Intern",
       company: "Cyber@UCI",
-      dates: "October 2025 – Present",
+      dates: "October 2025 – June 2026",
       location: "Irvine, CA",
       description: [
-        "Implemented JWT-based authentication using Authentik to enforce role-based access control, ensuring different club teams can only edit virtual machines for their respective teams.",
-        "Built Golang endpoints with the Proxmox VE API to automate creation and destruction of multiple VMs from shared templates, cutting club workshop setup time from ∼1 hour to under 15 minutes."
+        "Implemented Golang endpoints to automate creation and destruction of virtual machines (VMs) from our Proxmox VM templates, reducing club workshop setup time from ∼40 minutes to under 15 minutes.",
+        "Integrated Proxmox ticket-based authentication into our Golang app, letting non-technical club members have permission to manage VMs without needing to learn Proxmox and enabling reuse of our existing permission roles."
       ],
       logo: "cyber_uci_logo_color.svg", 
     },
@@ -47,9 +82,9 @@ export default function WorkExperiencePage() {
       location: "La Canada Flintridge, CA",
       description: [
         " Developed a MATLAB tool that processes 100k+ lines of historical schedule data in seconds to predict how many hours each deep-space spacecraft or antenna will be actively communicating.",
-        "Developed AWS Lambda functions that pull data from internal SQL databases and automate Confluence documentation page updates every week.",
+        "Developed AWS Lambda functions that pull data from internal SQL databases and automate Confluence documentation page updates every week, saving 6+ hours weekly.",
         "Reduced Confluence page creation and update time from ∼30 minutes to under 5.",
-        "Automated unit tests and deployed Docker images to AWS with a GitHub Actions CI/CD pipeline.",
+        "Automated unit tests and deployed Docker images to AWS Lmabda with a GitHub Actions CI/CD pipeline.",
       ],
       logo: "/jpl.png",
     },
